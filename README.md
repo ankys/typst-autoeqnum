@@ -1,2 +1,2 @@
 # typst-autoeqnum
-Automatic equation references in typst
+Automatic equation numbering in typst
