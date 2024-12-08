@@ -1,0 +1,8 @@
+[package]
+name = "autoeqnum"
+version = "0.1.0"
+entrypoint = "autoeqnum.typ"
+authors = ["Atsushi Nakayasu"]
+license = "MIT"
+description = "Automatic equation numbering in typst."
+repository = "https://github.com/ankys/typst-autoeqnum"
