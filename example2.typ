@@ -18,3 +18,5 @@ $ a^2 + b^2 = c^2 $ <label1>
 == Section 2
 
 $ a^2 + b^2 = c^2 $ <label2>
+
+Referring @label1.
