@@ -6,10 +6,13 @@
 	counter(math.equation).update(0)
 	it
 }
-#show: autoeqnum.with(mode: "label", numbering: it => {
-	let count = counter(heading.where(level: 1)).get().first()
-	numbering("(1.1)", count, it)
-})
+#show: autoeqnum.with(
+	mode: "label", 
+	numbering: it => {
+		let count = counter(heading.where(level: 1)).get()
+		numbering("(1.1)", ..count, it)
+	}
+)
 
 == Section 1
 
@@ -17,6 +20,6 @@ $ a^2 + b^2 = c^2 $ <label1>
 
 == Section 2
 
-$ a^2 + b^2 = c^2 $ <label2>
+$ a^n + b^n = c^n $ <label2>
 
-Referring @label1.
+Referring @label2.

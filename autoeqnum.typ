@@ -1,5 +1,5 @@
 
-#let autoeqnum(numbering: "(1)", mode: "ref", doc) = {
+#let autoeqnum(numbering: "1", mode: "ref", doc) = {
 	if numbering == none {
 		// do not input none
 		doc
