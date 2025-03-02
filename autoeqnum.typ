@@ -18,9 +18,11 @@
 		}
 		doc
 	} else if mode == "ref" {
+		let state-visited = state("autoeqnum-visited", ().to-dict())
 		set math.equation(numbering: numbering)
 		show math.equation.where(block: true, numbering: numbering): it => {
-			if it.has("label") and counter("autoeqnum?" + str(it.at("label"))).final().at(0) == 1 {
+			let visited = state-visited.final()
+			if it.has("label") and str(it.at("label")) in visited {
 				it
 			} else {
 				counter(math.equation).update(n => n - 1)
@@ -30,7 +32,10 @@
 		show ref: it => {
 			let el = it.element
 			if el != none and el.func() == math.equation {
-				counter("autoeqnum?" + str(it.target)).update(1)
+				state-visited.update(visited => {
+					visited.insert(str(it.target), true)
+					visited
+				})
 			}
 			it
 		}
