@@ -1,4 +1,6 @@
 
+#set page(height: 60mm)
+
 #import "./autoeqnum.typ": autoeqnum
 #show: autoeqnum.with()
 
