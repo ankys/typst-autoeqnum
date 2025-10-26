@@ -27,7 +27,7 @@ $ 1 + 8 + 27 + dots + n^3 = 1/4 n^2 (n+1)^2 $
 Referring @label2.
 ```
 
-![example 1](./example1.png)
+![example 1](examples/example1.svg)
 
 ## Options
 
@@ -68,4 +68,4 @@ $ a^n + b^n = c^n $ <label2>
 Referring @label2.
 ```
 
-![example 2](./example2.png)
+![example 2](examples/example2.svg)

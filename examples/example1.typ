@@ -1,7 +1,7 @@
 
 #set page(height: 60mm)
 
-#import "./autoeqnum.typ": autoeqnum
+#import "../autoeqnum.typ": autoeqnum
 #show: autoeqnum.with()
 
 $ 1 + 2 + 3 + dots + n = 1/2 n(n+1) $ <label1>

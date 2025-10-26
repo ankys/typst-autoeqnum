@@ -1,7 +1,7 @@
 
 #set page(height: 50mm)
 
-#import "./autoeqnum.typ": autoeqnum
+#import "../autoeqnum.typ": autoeqnum
 #set heading(numbering: "1.")
 #show heading.where(level: 2): set heading(level: 1)
 #show heading.where(level: 2): it => {
